@@ -38,7 +38,7 @@ pip install -r requirements.txt
 jupyter lab
 ```
 
-Open `Demo.ipynb` and run its cells from top to bottom. The notebook uses the included `sensor_data.pt`, so the original METAS CSV files are **not** needed to run this small illustration.
+Open `Demo.ipynb` and run its cells from top to bottom. The notebook uses the included `sensor_data.pt`.
 
 ## Minimal Python example
 
@@ -60,7 +60,7 @@ from spectral_lsf import learnable_spectral_filters
 result = learnable_spectral_filters(L_temperature, L_pressure, mixed, k1=5, k2=5)
 x_temperature_hat, x_pressure_hat = result.temperature, result.pressure
 
-# Closed-form truncated-basis baseline
+# Closed-form truncated-basis baseline for GSS-LSF
 baseline_temperature, baseline_pressure = closed_form_spectral(
     L_temperature, L_pressure, mixed, k1=5, k2=5
 )

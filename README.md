@@ -9,7 +9,7 @@
 
 This repository accompanies the paper **“Graph Signal Separation With Learnable Spectral Filters”**, which studies recovery of latent graph signals from a single noisy mixture by using source-specific graphs and unsupervised learnable spectral filtering.
 
-> **Implementation status:** This release implements the paper's **fixed-random-input learnable spectral filter** trained with Adam and includes a closed-form truncated graph Fourier least-squares.
+> **Implementation status:**  This repository provides the paper's fixed-random-input learnable spectral filtering approach, optimized using Adam, alongside a closed-form least-squares solution in the truncated graph Fourier domain. As discussed in the paper, both approaches are theoretically equivalent in this scenario and are expected to yield identical separation results upon convergence, up to numerical precision.
 
 
 ## Contents
